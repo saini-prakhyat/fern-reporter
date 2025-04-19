@@ -6,6 +6,7 @@ import (
 )
 
 const timeQueryLayout = "2006-01-02T15:04:05"
+const CookieName = "fern_user_cookie"
 
 func GetLongestTestRuns(h *Handler, projectName string, startTimeRange time.Time, endTimeRange time.Time) []models.TestRunInsight {
 	var testRuns []models.TestRunInsight
